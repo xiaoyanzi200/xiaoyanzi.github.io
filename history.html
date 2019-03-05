@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- SEO -->
+    <title>为之后台管理系统</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/history.css">
+</head>
+
+<body>
+<header>
+	<ul>
+		<li class="fir"><img src="../images/u341.jpg"></li>
+		<li class="sec">为之工作室后台管理系统</li>
+		<li class="thr"><a href="" style="color: #fff">退出</a></li>
+	</ul>
+</header>
+<article>
+	<div class="left">
+		<ul>
+			<li class="top">关于为之管理 ></li>
+			<li class="active"><a href="" style="color: #fff;">为之历史</a></li>
+		</ul>
+	</div>
+
+	<div class="right">
+		<ul>
+			<li>为之历史管理</li>
+			<li>
+				<button id="plus"  onclick="openP()">新增</button>
+			</li>
+		</ul>
+		<div class="line01"></div>
+
+		<div id="plusWin">
+			<span class="l-word">新增</span>
+			<span class="close" onclick="closeP()">&times;</span>
+			<div class="line02"></div>
+			<div class="row1">
+				<span>主标题：</span>
+				<form action="" method="post">
+				<input type="" name="" placeholder="请输入主标题" required="required"/>
+			</div>
+			<div class="row1" style="height: 100px">
+				<span>简介：</span>
+				<textarea type="" name="" placeholder="请输入简介，字数在200以内"  maxlength="200" required="required" style="height: 100px"></textarea>  
+			</div>
+			<input type="submit" value="确定" id="put"/>
+		</form>
+		</div>
+
+		<div id="change">
+			<span class="l-word">修改</span>
+			<span class="close" onclick="closeC()">&times;</span>
+			<div class="line02"></div>
+			<div class="row1">
+				<span>主标题：</span>
+				<form action="" method="post">
+				<input type="" name="" placeholder="请输入主标题" required="required"/>
+			</div>
+			<div class="row1" style="height: 100px">
+				<span>简介：</span>
+				<textarea type="" name="" placeholder="请输入简介，字数在200以内"  maxlength="200" required="required" style="height: 100px"></textarea>  
+			</div>
+			<input type="submit" value="确定" id="put"/>
+		</form>
+		</div>
+
+		<div id="del">
+			<span class="l-word">删除</span>
+			<span class="close" onclick="closeD()">&times;</span>
+			<div class="line02"></div>
+			<p>您确认删除吗?</p>
+
+			<button>删除</button>
+			<button onclick="closeD()">取消</button>
+		</div>	
+
+<script type="text/javascript">
+	   function openP(){
+	   	$("#plusWin").css("z-index","1")
+	   }
+	   function closeP(){
+	   	$("#plusWin").css("z-index","-1")
+	   }
+
+	   function openC(){
+	   	$("#change").css("z-index","1")
+	   }
+	   function closeC(){
+	   	$("#change").css("z-index","-1")
+	   } 
+
+	   function openD(){
+	   	$("#del").css("z-index","1")
+	   }
+	   function closeD(){
+	   	$("#del").css("z-index","-1")
+	   }</script>
+
+
+		<table border="1">
+			  <colgroup>
+    <col span="1" style="width: 20%;">
+    <col span="1" style="width: 50%;">
+    <col span="1" style="width: 30%;">
+  </colgroup>
+		    <tr style="height: 60px;background: #F2F2F2;">
+		        <th>主标题</th>
+		        <th>简介</th>
+		        <th>操作</th>
+		    </tr>
+
+		    <tr>
+		        <td>2017.11TG工作室诞生</td>
+		        <td>西电校园内缺少互联网领域人才培养组织，TG工作室应运而生</td>
+		        <td>
+		        	<button id="cha" onclick="openC()">修改</button>
+		        	<button id="de" onclick="openD()">删除</button>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td>2017.11TG工作室诞生</td>
+		        <td>西电校园内缺少互联网领域人才培养组织，TG工作室应运而生</td>
+		        <td>
+		        	<button id="cha" onclick="openC()">修改</button>
+		        	<button id="de" onclick="openD()">删除</button>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td>2017.11TG工作室诞生</td>
+		        <td>西电校园内缺少互联网领域人才培养组织，TG工作室应运而生</td>
+		        <td>
+		        	<button id="cha" onclick="openC()">修改</button>
+		        	<button id="de" onclick="openD()">删除</button>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td>2017.11TG工作室诞生</td>
+		        <td>西电校园内缺少互联网领域人才培养组织，TG工作室应运而生</td>
+		        <td>
+		        	<button id="cha" onclick="openC()">修改</button>
+		        	<button id="de" onclick="openD()">删除</button>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td>2017.11TG工作室诞生</td>
+		        <td>西电校园内缺少互联网领域人才培养组织，TG工作室应运而生</td>
+		        <td>
+		        	<button id="cha" onclick="openC()">修改</button>
+		        	<button id="de" onclick="openD()">删除</button>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td>2017.11TG工作室诞生</td>
+		        <td>西电校园内缺少互联网领域人才培养组织，TG工作室应运而生</td>
+		        <td>
+		        	<button id="cha" onclick="openC()">修改</button>
+		        	<button id="de" onclick="openD()">删除</button>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td>2017.11TG工作室诞生</td>
+		        <td>西电校园内缺少互联网领域人才培养组织，TG工作室应运而生</td>
+		        <td>
+		        	<button id="cha" onclick="openC()">修改</button>
+		        	<button id="de" onclick="openD()">删除</button>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td>2017.11TG工作室诞生</td>
+		        <td>西电校园内缺少互联网领域人才培养组织，TG工作室应运而生</td>
+		        <td>
+		        	<button id="cha" onclick="openC()">修改</button>
+		        	<button id="de" onclick="openD()">删除</button>
+		        </td>
+		    </tr>
+
+
+
+	
+
+
+		</table>
+
+
+
+</div>
+</article>
+</body>
+</html>
